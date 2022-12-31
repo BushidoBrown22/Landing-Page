@@ -1,0 +1,130 @@
+@import url(meyer-reset.css);
+/* SETUP */
+*{
+    box-sizing: border-box;
+}
+
+.picture{
+    display: block;
+}
+
+.img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* SETTINGS */
+
+
+
+
+
+
+/* STRUCTURE */
+body{
+    display: flex;
+    flex-direction: column;
+    border: 10px solid blue;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+    border: 10px solid pink;
+}
+
+div{
+    display: block;
+    border: 4px solid orange;
+    padding: 10px;
+}
+
+section{
+    display: block;
+    border: 4px solid lime;
+    padding: 10px;
+    width: 98%;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.one, .two, .three, .four{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+}
+
+
+/* TYPOGRAPHY */
+.hero-main{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-secondary{
+    font-size: 18px;
+}
+
+
+/* COMPONENTS */
+.sign-up{
+    display: inline-block;
+    background-color: #3882f6;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.6em 1em;
+    border-radius: 6px;
+
+}
+
+
+/* MODULES */
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.links{
+    display: flex;
+    gap: 16px;
+
+}
+
+.welcome{
+    display: block;
+    border: 1px solid blue;
+}
+
+.text{
+    display: block;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+
+}
+
+@media (min-width: 700px){
+    .welcome{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.welcome :is(.text, .picture){
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+header, footer, main{
+    border: 4px solid red;
+}
+
